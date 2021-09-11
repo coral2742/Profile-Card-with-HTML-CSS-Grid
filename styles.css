@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+:root{
+    --Dark-cyan: hsl(185, 75%, 39%);
+    --Very-Dark-Desaturated-Blue: hsl(229, 23%, 23%);
+    --Dark-Grayish-Blue: hsl(227, 10%, 46%);
+    --Dark-Gray: hsl(0, 0%, 59%);
+}
+
+body{
+    background-color: var(--Dark-cyan);
+    overflow: hidden;
+}
+
+.top{
+    position: absolute;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 978px;
+    width: 978px;
+    top: -528px;
+    left: -284px;
+}
+
+.bottom{
+    position: absolute;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 978px;
+    width: 978px;
+    bottom: -528px;
+    right: -220px;
+}
+
+.card-imagen{
+    position: absolute;
+}
+
+.card{
+    position: relative;
+    border-radius: 20px;
+    height: 375px;
+    width: 350px;
+    align-items: center;
+    text-align: center;
+    margin-top: 170px;
+    margin-bottom: 170px;
+    margin-left: 545px;
+    margin-right: 545px;
+    font-size: 18px;
+    font-family: 'Kumbh Sans', sans-serif;
+    overflow: hidden;
+    background-color: white;
+    z-index: 1;
+}
+
+.nombreage{
+    display: grid;
+    grid-template-columns: auto;
+}
+
+.nombreage p{
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 18px;
+    color: var(--Very-Dark-Desaturated-Blue);
+    width: 700;
+    font-weight: 700;
+}
+
+.nombreage span{
+    font-weight: 400;
+    color:var(--Dark-Grayish-Blue);
+}
+
+.city{
+    margin-top: -30px;
+    margin-bottom: 20px;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    color: var(--Dark-Grayish-Blue);
+}
+
+.stats{
+    display: grid;
+    font-family: 'Kumbh Sans', sans-serif;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.cantidad{
+    font-size: 18px;
+    color: var(--Very-Dark-Desaturated-Blue);
+    font-weight: 700;
+}
+
+.unidad{
+    font-size: 10px;
+    letter-spacing: 2px;
+    width: 400;
+    color:var(--Dark-Grayish-Blue);
+    font-weight: 400;
+}
+
+.profile{
+    width: 100px;
+    height: 100px;
+    margin: -50px auto;
+    margin-bottom: 5px;
+}
+
+.profile img{
+    position: absolute;
+    height: auto;
+    display: block;
+    border-radius: 50%;
+    border: 7px white solid;
+}
+
+.line{
+    border-top: 1px solid var(--Dark-Gray);
+    height: 0.5px;
+    margin-bottom: 30px;
+}
+
+.attribution{
+    font-size: 11px; text-align: center;
+    position: relative;
+}
+
+.attribution a{
+    color: hsl(228, 45%, 44%);
+}
+
+
+@media screen and (max-width: 400px){
+    body{
+        text-align: center;
+        height: 812px;
+        width: 375px;
+    }
+
+    .top{
+        height: auto;
+        width: auto;
+    }
+
+    .bottom{
+        height: auto;
+        width: auto;
+        right: -1250px;
+    }
+}
