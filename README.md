@@ -1,6 +1,6 @@
-# Frontend Mentor - Stats preview card component solution
+# Frontend Mentor - Profile Card Component solution
 
-This is a solution to the [Profile Card Component](https://www.frontendmentor.io/challenges/stats-preview-card-component-8JqbgoU62). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [Profile Card Component](https://www.frontendmentor.io/challenges/profile-card-component-cfArpWshJ). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
 ## Table of contents
 
@@ -33,8 +33,8 @@ Users should be able to:
 
 ### Links
 
-- My Solution URL: [https://www.frontendmentor.io/solutions/responsive-layout-using-html-and-css-5lZGRZ13U](https://www.frontendmentor.io/solutions/responsive-layout-using-html-and-css-5lZGRZ13U)
-- Live Site URL: [https://www.frontendmentor.io/challenges/stats-preview-card-component-8JqbgoU62](https://www.frontendmentor.io/challenges/stats-preview-card-component-8JqbgoU62)
+- My Solution URL: [https://www.frontendmentor.io/solutions/profile-card-with-html-css-grid-WcrOHGeN5](https://www.frontendmentor.io/solutions/profile-card-with-html-css-grid-WcrOHGeN5)
+- Live Site URL: [https://coral2742.github.io/Profile-Card-with-HTML-CSS-Grid/](https://coral2742.github.io/Profile-Card-with-HTML-CSS-Grid/)
 
 ## My process
 
@@ -54,43 +54,50 @@ I learned to...
 
 ```css
 :root{
-    --VeryDarkBlue: hsl(233, 47%, 7%);
-    --DarkDesaturatedBlue: hsl(244, 38%, 16%);
-    --SoftViolet: hsl(277, 64%, 61%);
-    --White: hsl(0, 0%, 100%);
-    --SlightlyTransparentWhite: hsla(0, 0%, 100%, 0.75);
-    --SlightlyTransparentWhite: hsla(0, 0%, 100%, 0.6);
+    --Dark-cyan: hsl(185, 75%, 39%);
+    --Very-Dark-Desaturated-Blue: hsl(229, 23%, 23%);
+    --Dark-Grayish-Blue: hsl(227, 10%, 46%);
+    --Dark-Gray: hsl(0, 0%, 59%);
 }
 ```
 
-· Highlight a word into a text changing the word's color and using "span":
-  
-  ```html
-  <h1>Get <span>insights</span> that help your business grow.</h1>
-  ```
+· Superimpose images: To put one image on top of the other, both images must be positioned absolutely.
   
   ```css
-  .textos span{
-    color: var(--SoftViolet);
+.card-imagen{
+    position: absolute;
+}
+
+.top{
+    position: absolute;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 978px;
+    width: 978px;
+    top: -528px;
+    left: -284px;
 }
   ```
 
-· Colorize an image with a solid color:
+· Space Between Words and Between Letters:
 
 ```css
-.imagen{
-    position: relative;
+.unidad{
+    font-size: 10px;
+    letter-spacing: 2px;
+    width: 400;
+    color:var(--Dark-Grayish-Blue);
+    font-weight: 400;
 }
+```
 
-.imagen::after{
-    position: absolute;
-    content: '';
-    height: 100%;
-    width: 100%;
-    left: 0;
-    right: 0;
-    background-color: var(--SoftViolet);
-    opacity: .5;
+· CSS Grid Layout:
+
+```css
+.stats{
+    display: grid;
+    font-family: 'Kumbh Sans', sans-serif;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 ```
 
@@ -98,13 +105,14 @@ I learned to...
 
 ### Continued development
 
-This was the first challenge I focused using HTML and CSS from the platform [Frontend Mentor](https://www.frontendmentor.io/challenges).
+This was the second challenge I focused using HTML and CSS from the platform [Frontend Mentor](https://www.frontendmentor.io/challenges).
 
 
 
 ### Useful resources
 
 - [Página web de Manz.dev](https://manz.dev/) - This helped me finding information about HTML and CSS with the cheatsheet posted. Thanks @ManzDev
+- [https://developer.mozilla.org/es/](https://developer.mozilla.org/es/) - This page solved doubts related to HTML and CSS
 
 
 
